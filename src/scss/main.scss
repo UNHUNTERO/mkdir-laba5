@@ -1,0 +1,80 @@
+$font-size: 1rem;
+$font-color: black;
+$body-color: rgb(123, 211, 255);
+$black : black;
+$blue : blue;
+$light_blue: rgb(0, 106, 255);
+
+$logo-width:60px;
+$logo-height:60px;
+$width: 1440px;
+$header-height: 320px;
+$footer-height: 320px;
+$content-height: 1000px;
+$card-heiht:150px;
+
+$border-size:1px;
+$border-solid:solid;
+
+$margin20:20px;
+$margin-left: 40px;
+$margin:50px;
+$display: flex ;
+html{
+     font-size: $font-size;
+     color: $font-color;
+     background-color: $body-color;
+     border: $border-size;
+}
+section{
+     border: $border-size $black $border-solid;
+     display: $display;
+}
+.head_card{
+     border: $border-size $black $border-solid;
+     height:90%;
+     margin: $margin20;
+}
+header{
+     border: $border-size $black $border-solid;
+     height: $header-height;
+     display: $display;
+     flex-direction: column;
+}
+main{
+    border: $border-size $black $border-solid;
+    text-align: center;
+    height: $content-height;
+}
+footer{
+     border: $border-size $black $border-solid;
+     height: $footer-height;
+     display: $display;
+}
+.logo{
+     border: $border-size $black $border-solid;
+     margin: $margin20;
+     width: $logo-width;
+     height: $logo-height;
+   
+}
+.menu{
+     width: 80%;
+     margin:$margin20;
+     height: $logo-height;
+   
+}
+.footmenu{
+     width: 50%;
+     margin: $margin;
+}
+.sample{
+     border: $border-size $black $border-solid;
+     height:20%;
+     margin: $margin20;
+}
+.create_but{
+     border: $border-size $black $border-solid;
+     height: 5%;
+     margin: $margin20;
+}
