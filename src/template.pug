@@ -1,23 +1,14 @@
 doctype html 
 html
     head 
-     meta(charset="utf-8")
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Shipping
+    script(src="https://use.fontawesome.com/08c46a2805.js")
     body
-    
-    header
-     section
-      h1.logo МП
-      section.menu Меню
-     section.head_card Популярний шаблон
-
-    
-    main 
-     section.sample  Шаблони
-     section.sample  Шаблони
-     section.sample  Шаблони
-     section.sample  Шаблони
-     section.create_but  Створення шаблону
-    footer 
-     section.footmenu Menu 
-     section.footmenu Info
+        include header.pug
+        include content.pug
+        include footer.pug   
+   
     
