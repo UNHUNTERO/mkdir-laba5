@@ -1,0 +1,58 @@
+@import 'mixin';
+header{
+    border: $border-size $black $border-solid;
+    height: fit-content;
+    display: $display;
+    flex-direction: column;
+    background-color: $dark-blue;
+    nav{
+        width: 100%;
+        gap:$gap;
+        text-align: center;
+        margin-top: 18px;
+    }
+    a{
+        
+            font-family: 'Noto sans';
+            @include font-size($p-font-size);
+            @include a($white,$orange);
+           text-decoration: none;
+           margin-left: 5%;
+    }
+    
+}
+.headline{
+    width: 100%;
+    color: $dark-blue;
+}
+.head_card{
+    border: $border-size $black $border-solid;
+    height:90%;
+    width: 100%;
+    margin: $margin2p;
+    display: $display;
+    
+}
+.head_card_img{
+    border: $border-size $black $border-solid;
+    height: 100%;
+    background-image: url(../images/Ocean.jpg) no-repeat;
+    background-size: contain;
+}
+.card_info{
+    display: $display;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    h3
+    {
+       font-family: 'Cormorant Infant';
+       @include font-size($h3-font-size + 6px);
+       color: $orange;
+    }
+    p{
+        color: $white;
+
+    }
+}
+

@@ -1,23 +1,22 @@
 a(name = "footer")
 footer
     article.article_footer
-        div
-            div
+        div.logo_text
+            div.logo
                 a(href='#') 
-                    span Морські
-                    span Вантажні
-                    span Перевезення
-        nav
+                    h3 Морські Перевезення
+                    img(src=require('./images/shipping.jpg') alt="Ship").logo_img_footer
+        nav.footer_menu
             h3 Послуги
             a Про нас
             a Контакти
-        div
+        div.address
             h3 Контакти
             p ship@gmail.com
             p +380992222222
             p Київ, вул. Хрещатик 25
-        nav
-            h3 Соціальні
+        nav.footer_menu
+            h3 Соціальні Мережі
             a(href="facebook.com") Facebook
             a(href="twitter.com") Twitter
             a(href="instagram.com") Instagram

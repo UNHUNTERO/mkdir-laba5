@@ -2,8 +2,32 @@
 
 footer{
     border: 1px black solid;
-    height: 320px;
+    height: 500px;
     display: flex;
+    background-color: darkblue;
+    @include font-size($p-font-size);
+    @include flex();
+    flex-direction: column;
+      h2
+    {
+       font-family: 'Cormorant Infant';
+       @include font-size($h2-font-size);
+       color: $orange;
+    }
+        h3
+    {
+       font-family: 'Cormorant Infant';
+       @include font-size($h3-font-size + 6px);
+       color: $orange;
+    }
+    p
+    {
+        opacity: 80%;
+        color:$white;
+    }
+    .img_logo_footer{
+        height: 120px;
+    }
 }
 @mixin column()
 {
@@ -12,11 +36,10 @@ footer{
             flex-direction: column;
             align-items: flex-start;
 }
-
 .article_footer{
         @include flex();
         align-items: flex-start;
-        width: 90%;
+        width: 100%;
         margin-top: $margin;
         .logo_text
         {

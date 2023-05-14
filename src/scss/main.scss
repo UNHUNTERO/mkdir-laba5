@@ -6,11 +6,15 @@ $body-color: rgb(123, 211, 255);
 $black : black;
 $blue : blue;
 $light_blue: rgb(0, 106, 255);
+$dark-blue:rgb(2, 2, 164);
+$white:white;
+$orange:#FFA41C;
 
-$logo-width:60px;
+$gap:30px;
+$logo-width:auto;
 $logo-height:60px;
 $width: 1440px;
-$header-height: 320px;
+$header-height: 420px;
 $footer-height: 320px;
 $content-height: 1000px;
 $card-heiht:150px;
@@ -18,10 +22,21 @@ $card-heiht:150px;
 $border-size:1px;
 $border-solid:solid;
 
-$margin20:20px;
+$margin2p :2%;
 $margin-left: 40px;
 $margin:50px;
+
+$p-font-size: 18px;
+$p-font-size-large: 20px;
+$p-font-size-small: 16px;
+$h1-font-size: 72px;
+$h2-font-size:48px;
+$h3-font-size: 24px;
 $display: flex ;
+body{
+     width: 100%;
+     margin: 0px;
+}
 html{
      font-size: $font-size;
      color: $font-color;
@@ -32,34 +47,17 @@ section{
      border: $border-size $black $border-solid;
      display: $display;
 }
-.head_card{
-     border: $border-size $black $border-solid;
-     height:90%;
-     margin: $margin20;
-}
-header{
-     border: $border-size $black $border-solid;
-     height: $header-height;
-     display: $display;
-     flex-direction: column;
-}
+
+
 main{
     border: $border-size $black $border-solid;
     text-align: center;
-    height: $content-height;
-}
-
-.logo{
-     border: $border-size $black $border-solid;
-     margin: $margin20;
-     width: $logo-width;
-     height: $logo-height;
+    height: fit-content;
 }
 .menu{
      width: 80%;
-     margin:$margin20;
+     margin:$margin2p;
      height: $logo-height;
-   
 }
 .footmenu{
      width: 50%;
@@ -68,10 +66,58 @@ main{
 .sample{
      border: $border-size $black $border-solid;
      height:20%;
-     margin: $margin20;
+     margin: $margin2p;
 }
 .create_but{
      border: $border-size $black $border-solid;
      height: 5%;
-     margin: $margin20;
+     margin: $margin2p;
 }
+.logo_img{
+
+     border: $border-size $black $border-solid;
+     margin: $margin2p;
+     width: $logo-width;
+     height: $logo-height;
+}
+.buy_button {
+     text-decoration: none;
+     display: inline-block;
+     padding: 12px 40px;
+     margin: 10px 20px;
+     border-radius: 30px;
+     background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+     background-position: 100% 0;
+     background-size: 200% 200%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 24px;
+     font-weight: 300;
+     color: white;
+     box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+     transition: .5s;
+   }
+   .buy_button:hover {
+     box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+     background-position: 0 0;
+   }
+   .buy_button_sample {
+     text-decoration: none;
+     display: inline-block;
+     padding: 12px 40px;
+     margin: 10px 20px;
+     border-radius: 30px;
+     background-image: linear-gradient(45deg, #d7ba6a 0%, #dec433 50%, #785e00 100%);
+     background-position: 100% 0;
+     background-size: 200% 200%;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 24px;
+     font-weight: 300;
+     color: white;
+     box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+     transition: .5s;
+     width: 100%;
+   }
+   .buy_button_sample:hover {
+     box-shadow: 0 0 0 0 rgba(206, 168, 0, 0);
+     background-position: 0 0;
+   }

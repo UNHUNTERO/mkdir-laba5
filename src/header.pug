@@ -1,6 +1,20 @@
 a(name="header")
 header
-     section
-      img(src="./images/shipping.png",alt = "ship").logo
-      section.menu Меню
-     section.head_card Популярний шаблон
+     section 
+      section.headline
+       img(src=require('./images/shipping.jpg') alt="Ship").logo_img
+       section.menu
+          nav.main_menu 
+               a(href="#header") Про нас
+               a(href="#main") Готові замовлення
+               a(href="#new_cargo") Створити власний контейнер
+               a(href="#footer") Контакти
+     section.head_card_img
+      section.head_card
+          button.buy_button Замовити
+          section.card_info
+               h3 Найпопулярніший шаблон
+               p Кількість контейнерів :3
+               p Максимальна вага: 3 тонни
+               p Швидкість доставки: швидко
+          
