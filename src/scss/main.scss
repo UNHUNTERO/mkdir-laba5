@@ -44,13 +44,11 @@ html{
      border: $border-size;
 }
 section{
-     border: $border-size $black $border-solid;
      display: $display;
 }
 
 
 main{
-    border: $border-size $black $border-solid;
     text-align: center;
     height: fit-content;
 }
@@ -64,18 +62,16 @@ main{
      margin: $margin;
 }
 .sample{
-     border: $border-size $black $border-solid;
+     background-color: $blue;
      height:20%;
      margin: $margin2p;
 }
 .create_but{
-     border: $border-size $black $border-solid;
      height: 5%;
      margin: $margin2p;
 }
 .logo_img{
 
-     border: $border-size $black $border-solid;
      margin: $margin2p;
      width: $logo-width;
      height: $logo-height;

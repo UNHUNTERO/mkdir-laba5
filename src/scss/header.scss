@@ -23,10 +23,15 @@ header{
 }
 .headline{
     width: 100%;
-    color: $dark-blue;
+    background-color: $dark-blue;
+    h3
+    {
+       font-family: 'Cormorant Infant';
+       @include font-size($h3-font-size - 2px);
+       color: $orange;
+    }
 }
 .head_card{
-    border: $border-size $black $border-solid;
     height:90%;
     width: 100%;
     margin: $margin2p;
