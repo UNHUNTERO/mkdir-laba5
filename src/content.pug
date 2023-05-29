@@ -26,4 +26,20 @@ main
                p Швидкість доставки: швидко
      a(name="new_cargo")
      section.create_but
-          button.buy_button_sample Створити шаблон
+          article.flowers
+            h2 Створення власного замовлення
+          form
+          fieldset 
+               legend Додати контейнер
+               label Контейнер
+               select(name="cargo" id="cargo")
+                    option Вантаж1
+                    option Вантаж2
+               label Кількість
+               input(type="number" name="cargo_count" id="cargo_count" min="0" max="50" value="2") 
+               h3(id="price_cargos") Вартість
+               button(type="button" id="calc_cargos") Додати до Замовлення
+          h2 Замовлення
+          h3(id="all_Cargos") Вантаж та кількість
+          h3(id="all_price_cargo") Загальна
+          a(href="#").buy_now Купити зараз
